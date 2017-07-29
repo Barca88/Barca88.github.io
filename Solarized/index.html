@@ -16,7 +16,7 @@
 
 	
 	<div id="top_bar">
-		<a id="frontpage", href="https://www.youtube.com">youtube</a>
+		<a id="youtube", href="https://www.youtube.com">youtube</a>
 		<a id="dota2", href="https://www.reddit.com/r/DotA2">r/DotA2</a>
 		<a id="android", href="https://www.reddit.com/r/androidthemes">r/androidthemes</a>
 		<a id="jokes", href="https://www.reddit.com/r/Jokes">r/Jokes</a>
@@ -24,7 +24,7 @@
 		<a id="wiki", href="https://wikipedia.com">wikipedia</a>
 		<a id="rice", href="https://www.reddit.com/r/unixporn">r/unixporn</a>
 		<a id="xda", href="https://xda-developers.com">xda</a>
-	</div>
+</div>
 	
 	<div id="logo">
 		<!--Uses text and not an image to speed things up -->
@@ -41,9 +41,10 @@
 	</div>
 	
 	<div id="icons", style="font-size:48px">
-		<i id="github", class="fa fa-github", onclick="Javascript: window.location = 'https://github.com/NerdyPepper'"></i>
-		<i id="gplus", class="fa fa-google-plus-circle", onclick="Javascript: window.location = 'https://plus.google.com'"></i>
-		<i id="twitter", class="fa fa-twitter", onclick="Javascript: window.location = 'https://twitter.com'"></i>
+		<i id="github", class="fa fa-github-square", onclick="Javascript: window.location = 'https://github.com/NerdyPepper'"></i>
+		<i id="gplus", class="fa fa-google-plus-square", onclick="Javascript: window.location = 'https://plus.google.com'"></i>
+		<i id="twitter", class="fa fa-twitter-square", onclick="Javascript: window.location = 'https://twitter.com'"></i>
+        <i id="facebook", class="fa fa-facebook-square", onclick="Javascript: window.location = 'https://facebook.com'"></i>
 	</div>
 	
 	
@@ -51,27 +52,23 @@
 	</body>
 </head>
 
-
-
-
-
-
 <style type = "text/css">
 	
 	:root {
-		--main-color: #002b36;
-		--green: #859900;
-		--orange: #cb4b16;
-		--red: #dc322f;
-		--cyan: #2aa198;
-		--blue: #268bd2;
-		--magenta: #d33682;
-		--violet: #6c71c4;
-		--yellow: #b58900;
-		--foreground-light: #93a1a1;
+		--main-color: #292a44;
+		--main-muted: #aaaaaa;
+		--green: #2de087;
+		--orange: #e88e2c;
+		--red: #e72d2d;
+		--cyan: #6dfedf;
+		--orange:  #e88e2c;
+		--blue: #678bdc;
+		--magenta: #ff6f9f;
+		--violet: #f92672;
+		--yellow: #ffdb7d;
+		--foreground-light: #678bdc;
 		--white: #ffffff;
 	}
-	
 	
 	@keyframes rise {
 		0% {opacity:0;}
@@ -85,7 +82,7 @@
 	
 	body {
 		background-color: var(--main-color);
-		text-align: center;
+        text-align: center;
 		margin: 0;
 	}
 		
@@ -96,9 +93,9 @@
 		color: #dc322f;
 		font-size: 12px;
 		padding: 30px;
-		border: 5px solid #073642;
-		background: #073642;
-		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+		border: 5px solid var(--main-color);
+		background: var(--main-color);
+		box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
 		
 		-webkit-touch-callout: none;
 		-webkit-user-select: none;
@@ -110,8 +107,8 @@
 	
 	a:link , a:visited{
 		text-decoration: none;
-		color: #93a1a1;
-		background-color:#073642;
+		color: var(--main-muted);
+		background-color:var(--main-color);
 		border-style: 2px solid;
 		border-radius: 3px;
 		padding: 8px;
@@ -127,44 +124,44 @@
 		
 	}
 	
-	#frontpage {
+	#youtube{
 		text-decoration: none;
-		border: 2px solid #cb4b16;
+		border: 2px solid var(--orange);
 		margin: 5px;
 		transition: 0.5s ease;
 	} 
 	
 	#dota2 {
 		text-decoration: none;
-		border:2px solid #dc322f;
+		border:2px solid var(--red);
 		margin: 5px;
 		transition: 0.5s ease;
 	} 
 	
 	#android {
 		text-decoration: none;
-		border:2px solid #d33682;
+		border:2px solid var(--violet);
 		margin: 5px;
 		transition: 0.5s ease;
 	} 
 	
 	#jokes {
 		text-decoration: none;
-		border:2px solid #6c71c4;
+		border:2px solid var(--magenta);
 		margin: 5px;
 		transition: 0.5s ease;
 	} 
 	
 	#archlinux {
 		text-decoration: none;
-		border:2px solid #268bd2;
+		border:2px solid var(--blue); 
 		margin: 5px;
 		transition: 0.5s ease;
 	}
 	
 	#wiki {
 		text-decoration: none;
-		border:2px solid #2aa198;
+		border:2px solid var(--cyan);
 		margin: 5px;	
 		transition: 0.5s ease;
 	}
@@ -183,85 +180,84 @@
 		transition: 0.5s ease;
 	}
 	
-	#frontpage:hover {
+	#youtube:hover {
 		transition: 0.5s ease;
 		text-decoration: none;
-		background-color: #cb4b16;
-		color: #ffffff;
+		background-color: var(--orange);
+		color: var(--white);
 	} 
 	
 	#dota2:hover {
 		transition: 0.5s ease;
 		text-decoration: none;
-		background-color: #dc322f;
-		color: #ffffff;
+		background-color: var(--red);
+		color: var(--white);
 	} 
 	
 	#android:hover {
 		transition: 0.5s ease;
 		text-decoration: none;
 		background-color: #d33682;
-		color: #ffffff;
+		color: var(--white);
 	} 
 	
 	#jokes:hover {
 		transition: 0.5s ease;
 		text-decoration: none;
-		background-color: #6c71c4;
-		color: #ffffff;
+		background-color: var(--magenta);
+		color: var(--white);
 	} 
 	
 	#archlinux:hover {
 		transition: 0.5s ease;
 		text-decoration: none;
-		background-color: #268bd2;
-		color: #ffffff;
+		background-color: var(--blue);
+		color: var(--white);
 	}
 	
 	#wiki:hover {
-		transition: 0.5s ease;;
+		transition: 0.5s ease;
 		text-decoration: none;
-		background-color: #2aa198;	
-		color: #ffffff;
+		background-color: var(--cyan);	
+		color: var(--white);
 	}
 	
 	#rice:hover {
 		transition: 0.5s ease;
 		text-decoration: none;
 		background-color: var(--green);	
-		color: #ffffff;
+		color: var(--white);
 	}
 	
 	#xda:hover {
 		text-decoration: none;
 		background-color: var(--yellow);
-		color: #ffffff;
+		color: var(--white);
 		transition: 0.5s ease;
-	}
+	} 
 	
 	input {
-		font-family: 'Nova Mono', monospace;
+		font-family: 'SFNS Display', monospace;
 		text-align: center;
-		color: #93a1a1;
-		background-color: #073642;
-		border: 2px solid #073642;
+		color: var(--white);
+		background-color: var(--main-color);
+		border: 2px solid var(--main-color);
 		border-radius: 3px;
 		width: 42%;
 		height: 20px;
 		font-size: 14px;
 		padding : 8px;
+		box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.7);
 		position: relative;
-		transition: 0.5s ease;
+		transition: 0.2s ease;
 	}
 		
 	input:focus {
-		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
-		border: 2px solid #073642;
+		box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.7);
 	}
 		
 	input:hover {
-		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
-		border: 2px solid #073642;
+		box-shadow: 1px 4px 10px 0px rgba(0,0,0,0.7);
 	}
 	
 	#logo {
@@ -290,10 +286,10 @@
 		position: center;
 		font-family: 'Monaco', sans-serif;
 		text-align: center;
-		color: #93a1a1;
+		color: var(--main-muted);
 		font-size: 12px;
 		padding: 30px;
-		background: #002b36;
+		background: rgba(0,0,0,0);
 		
 		-webkit-touch-callout: none;
 		-webkit-user-select: none;
@@ -303,22 +299,37 @@
 		user-select: none;
 	}
 	
-	#github ,#gplus, #twitter{
-		background-color: #002b36;
-		color: var(--foreground-light);
+	#github ,#gplus, #twitter, #facebook, #reddit, #mail, #youtube {
+		background-color: rgba(0,0,0,0);
+		color: var(--main-muted);
 		transition: 0.5s ease;
 	}
 	
 	#github:hover {
-		color: var(--violet);
+		color: var(--yellow);
 		transition: 0.5s ease;
 	}
-	
 	#gplus:hover {
 		color: var(--red);
 		transition: 0.5s ease;
 	}
 	#twitter:hover {
+		color: var(--cyan);
+		transition: 0.5s ease;
+	}
+    #facebook:hover {
+        color: var(--blue);
+        transition: 0.5s ease;
+    }
+	#reddit:hover {
+		color: var(--orange);
+		transition: 0.5s ease;
+	}
+	#mail:hover {
 		color: var(--blue);
+		transition: 0.5s ease;
+	}
+	#youtubei:hover {
+		color: var(--red);
 		transition: 0.5s ease;
 	}
