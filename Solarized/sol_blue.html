@@ -1,0 +1,428 @@
+<!doctype html>
+<title>Home</title>
+<head><link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
+<body>
+	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+		
+	<script>			
+		window.onkeyup = keyup;
+		var inputTextValue;
+		function keyup(e) {
+			inputTextValue = e.target.value;
+			if (e.keyCode == 13) {
+				window.location = "http://www.google.com/search?q=" + inputTextValue;
+			}
+		}
+	</script>
+	
+	
+	<div id="top_bar">
+		<a id="youtube", href="https://www.youtube.com">Youtube</a>
+		<a id="curso", href="http://198.199.67.14/">OCurso</a>
+		<a id="ngag", href="https://9gag.com/">9Gag</a>
+		<a id="reddit", href="https://www.reddit.com">Reddit</a>
+		<a id="dropbox", href="https://www.dropbox.com/sh/75gmp2trwrcqdfc/AAD43Pw8grgKDedJRiARM5vXa?dl=0">Dropbox</a>
+		<a id="mail", href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1501376425&rver=6.7.6643.0&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2Fdefault.aspx&lc=1033&id=64855&mkt=en-us&cbcxt=mai">Mail</a>
+		<a id="pa", href="https://alunos.uminho.pt/EN">Portal Académico</a>
+		<a id="di", href="http://miei.di.uminho.pt/">Eng.Informática</a>
+	</div>
+	
+	<div id="logo">
+		<!--Uses text and not an image to speed things up -->
+		<span style="color: var(--blue)">G</span>
+		<span style="color: var(--red)">3</span>
+		<span style="color: var(--yellow)">1</span>
+		<span style="color: var(--blue)">g</span>
+		<span style="color: var(--green);)">l</span>
+		<span style="color: var(--red);)">e</span>
+	</div>
+	
+	<div>
+		<input id="search_bar", style="search", type="text", spellcheck="false", onKeydown="Javascript: if (event.keyCode == 13) search();", autofocus>
+	</div>
+	
+	<div id="icons", style="font-size:48px">
+		<i id="facebook", class="fa fa-facebook-square", onclick="Javascript: window.location = 'https://facebook.com'"></i>
+		<i id="blackboard", class="fa fa-university", onclick="Javascript: window.location = 'https://elearning.uminho.pt/'"></i>
+	        <i id="instagram", class="fa fa-instagram", onclick="Javascript: window.location = 'https://instagram.com'"></i>
+	</div>
+	
+	<div class='center'>
+
+	  <p class="awesome">_________________________________________________________</p>
+	</div>
+	
+	</body>
+	
+</head>
+
+
+<style type = "text/css">
+
+	:root {
+		--main-color: #002b36;
+		--green: #859900;
+		--orange: #cb4b16;
+		--red: #dc322f;
+		--cyan: #2aa198;
+		--blue: #268bd2;
+		--magenta: #d33682;
+		--violet: #6c71c4;
+		--yellow: #b58900;
+		--foreground-light: #93a1a1;
+		--white: #ffffff;
+	}
+	
+	
+	@keyframes rise {
+		0% {opacity:0;}
+		50% {opacity:0.5;}
+		100% {opacity:1;}
+	}
+	
+	@keyframes fadein {
+		from {opacity:0.3;}
+		to {opacity:1;}
+	}
+	
+	body {
+		background-color: var(--main-color);
+		text-align: center;
+		margin: 0;
+		height: 100%;
+	}
+	
+	.center {
+      
+	      margin: 0 auto;
+
+	    }
+
+	    .awesome {
+
+	      font-family: futura;
+	      font-style: italic;
+
+	      width:100%;
+
+	      margin: 0 auto;
+	      text-align: center;
+
+	      color:#313131;
+	      font-size:45px;
+	      position: absolute;
+	      -webkit-animation:colorchange 20s infinite alternate;
+
+
+	    }
+
+	    @-webkit-keyframes colorchange {
+	      0% {
+
+		color: blue;
+	      }
+
+	      10% {
+
+		color: #8e44ad;
+	      }
+
+	      20% {
+
+		color: #1abc9c;
+	      }
+
+	      30% {
+
+		color: #d35400;
+	      }
+
+	      40% {
+
+		color: blue;
+	      }
+
+	      50% {
+
+		color: #34495e;
+	      }
+
+	      60% {
+
+		color: blue;
+	      }
+
+	      70% {
+
+		color: #2980b9;
+	      }
+	      80% {
+
+		color: #f1c40f;
+	      }
+
+	      90% {
+
+		color: #2980b9;
+	      }
+
+	      100% {
+
+		color: pink;
+	      }
+	    }
+	
+	
+	#top_bar {
+		position: center;
+		font-family: 'SFNS Display', monospace;
+		text-align: center;
+		color: #dc322f;
+		font-size: 12px;
+		padding: 30px;
+		border: 5px solid #073642;
+		background: #073642;
+		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+		
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
+	a:link , a:visited{
+		text-decoration: none;
+		color: #93a1a1;
+		background-color:#073642;
+		border-style: 2px solid;
+		border-radius: 3px;
+		padding: 8px;
+		width: 200px;
+		height: 100px;
+		
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		
+	}
+	
+	#youtube {
+		text-decoration: none;
+		border: 3px solid #dc322f;
+		border-radius: 6px;
+		margin: 5px;
+		transition: 0.5s ease;
+	} 
+	
+	#curso {
+		text-decoration: none;
+		border:3px solid #cb4b16;
+		border-radius: 6px;
+		margin: 5px;
+		transition: 0.5s ease;
+	} 
+	
+	#dropbox {
+		text-decoration: none;
+		border:3px solid #4da6ff;
+		border-radius: 6px;
+		margin: 5px;
+		transition: 0.5s ease;
+	} 
+	
+	#reddit {
+		text-decoration: none;
+		border:3px solid #d33682;
+		border-radius: 6px;
+		margin: 5px;
+		transition: 0.5s ease;
+	}
+	
+	#ngag {
+		text-decoration: none;
+		border:3px solid #000000;
+		border-radius: 6px;
+		margin: 5px;
+		transition: 0.5s ease;
+	} 
+	
+	#mail {
+		text-decoration: none;
+		border:3px solid #ffcc00;
+		border-radius: 6px;
+		margin: 5px;	
+		transition: 0.5s ease;
+	}
+	
+	#pa {
+		text-decoration: none;
+		border:3px solid #ff4d4d;
+		border-radius: 6px;
+		margin: 5px;
+		transition: 0.5s ease;
+	}
+	
+	#di {
+		text-decoration: none;
+		border:3px solid #00b300;
+		border-radius: 6px;
+		margin: 5px;
+		transition: 0.5s ease;
+	}
+
+	#youtube:hover {
+		box-shadow: 3px 3px 5px #831816;
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: #dc322f;
+		color: #ffffff;
+	} 
+	
+	#curso:hover {
+		box-shadow: 3px 3px 5px #8a340f;
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: #cb4b16;
+		color: #ffffff;
+	} 
+	
+	#dropbox:hover {
+		box-shadow: 3px 3px 5px #004d99;
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: #4da6ff;
+		color: #ffffff;
+	} 
+	
+	#reddit:hover {
+		box-shadow: 3px 3px 5px #7d1c4b;
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: #d33682;
+		color: #ffffff;
+	}
+	
+	#ngag:hover {
+		box-shadow: 3px 3px 5px #000000;
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: #000000;
+		color: #ffffff;
+	} 
+	
+	#mail:hover {
+		box-shadow: 3px 3px 5px #997a00;
+		transition: 0.5s ease;;
+		text-decoration: none;
+		background-color: #ffcc00;	
+		color: #ffffff;
+	}
+	
+	#pa:hover {
+		box-shadow: 3px 3px 5px #990000;
+		transition: 0.5s ease;
+		text-decoration: none;
+		background-color: #ff4d4d;	
+		color: #ffffff;
+	}
+	
+	#di:hover {
+		box-shadow: 3px 3px 5px #008000;
+		text-decoration: none;
+		background-color: #00b300;
+		color: #ffffff;
+		transition: 0.5s ease;
+	}
+	
+	input {
+		font-family: 'SFNS Display', monospace;
+		text-align: center;
+		color:  #99ff99;
+		background-color: #073642;
+		border: 2px solid #073642;
+		border-radius: 3px;
+		width: 42%;
+		height: 20px;
+		font-size: 20px;
+		padding : 8px;
+		position: relative;
+		transition: 0.5s ease;
+		animation-name: rise;
+		animation-duration: 0.7s;
+		animation-timing-function: linear;
+		animation-iteration: 1;
+	}
+		
+	input:focus {
+		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+		border: 2px solid #073642;
+	}
+		
+	input:hover {
+		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+		border: 2px solid #073642;
+	}
+	
+	#logo {
+		margin-top: 50px;
+		font-family: 'SFNS Display', monospace;
+		font-size: 70px;
+		text-align: center;
+		padding: 50px;	
+		animation-name: rise;
+		animation-duration: 3.5s;
+		animation-iteration: 1;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
+	#big_g {
+		height: 100px;
+		margin-top: 50px;
+	}
+	
+	#icons {
+		position: center;
+		font-family: 'Nova Mono', sans-serif;
+		text-align: center;
+		color: #595959;
+		font-size: 12px;
+		padding: 30px;
+		background: #002b36;
+		
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	
+	#instagram ,#blackboard, #facebook{
+		background-color: #002b36;
+		color: var(--foreground-light);
+		transition: 0.5s ease;
+	}
+	
+	#instagram:hover {
+		color: var(--violet);
+		transition: 0.5s ease;
+	}
+	
+	#blackboard:hover {
+		color: var(--yellow);
+		transition: 0.5s ease;
+	}
+	#facebook:hover {
+		color: var(--blue);
+		transition: 0.5s ease;
+	}
