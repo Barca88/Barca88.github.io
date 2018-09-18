@@ -28,7 +28,6 @@
 	</div>
 	
 	<div id="logo">
-		<!--Uses text and not an image to speed things up -->
 		<span style="color: var(--blue)">G</span>
 		<span style="color: var(--red)">o</span>
 		<span style="color: var(--yellow)">o</span>
@@ -85,7 +84,7 @@
 	}
 	
 	body {
-		background-color: var(--main-color);
+		background-image: url("island_day_blur.jpg");
 		text-align: center;
 		margin: 0;
 		height: 100%;
@@ -95,65 +94,76 @@
       
 	      margin: 0 auto;
 	    }
-	    .awesome {
-	      font-family: futura;
-	      font-style: italic;
-	      width:100%;
-	      margin: 0 auto;
-	      text-align: center;
-	      color:#313131;
-	      font-size:45px;
-	      position: absolute;
-	      -webkit-animation:colorchange 20s infinite alternate;
-	    }
-	    @-webkit-keyframes colorchange {
-	      0% {
-		color: blue;
-	      }
-	      10% {
-		color: #8e44ad;
-	      }
-	      20% {
-		color: #1abc9c;
-	      }
-	      30% {
-		color: #d35400;
-	      }
-	      40% {
-		color: blue;
-	      }
-	      50% {
-		color: #34495e;
-	      }
-	      60% {
-		color: blue;
-	      }
-	      70% {
-		color: #2980b9;
-	      }
-	      80% {
-		color: #f1c40f;
-	      }
-	      90% {
-		color: #2980b9;
-	      }
-	      100% {
-		color: pink;
-	      }
 	
+	.awesome {
+	    font-family: futura;
+	    font-style: italic;
+	    width:100%;
+	    margin: 0 auto;
+		text-align: center;
+		color:#313131;
+	    font-size:45px;
+	    position: absolute;
+	    -webkit-animation:colorchange 20s infinite alternate;
+		
+	}
+	
+	@-webkit-keyframes colorchange {
+	    0% {
+		color: blue;
 	    }
+
+	    10% {
+		color: #8e44ad;
+	    }
+
+	    20% {
+		color: #1abc9c;
+	    }
+	    
+		30% {
+		color: #d35400;
+	    }
+	    
+		40% {
+		color: blue;
+	    }
+
+	    50% {
+		color: #34495e;
+	    }
+
+	    60% {
+		color: blue;
+	    }
+
+	    70% {
+		color: #2980b9;
+	    }
+
+	    80% {
+		color: #f1c40f;
+	    }
+	      
+		90% {
+		color: #2980b9;
+	    }
+	      
+		100% {
+		color: pink;
+	    }
+	
+	}
 	
 	
 	#top_bar {
-		position: center;
 		font-family:'Open Sans', sans-serif; 
 		text-align: center;
 		color: #dc322f;
 		font-size: 13px;
 		padding: 30px;
-		border: 5px solid #1f2328;
-		background: #1f2328;
-		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+		background-color: rgba(0, 0, 0, 0.3);
+		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.8);
 		
 		-webkit-touch-callout: none;
 		-webkit-user-select: none;
@@ -166,7 +176,6 @@
 	a:link , a:visited{
 		text-decoration: none;
 		color: #93a1a1;
-		background-color:#1f2328;
 		border-style: 2px solid;
 		padding: 8px;
 		width: 200px;
@@ -181,6 +190,11 @@
 		
 	}
 	
+	a:hover{
+		color: var(--blue);
+		transition: 0.5s ease;
+	}
+
 	#youtube {
 		font-family: 'Josefin Sans', sans-serif;
   		font-size: 1rem;
@@ -252,97 +266,13 @@
 	}
 	
 	
-	#youtube:hover {
-		transition: box-shadow 900ms cubic-bezier(.33,.11,.02,.99),
-              	transform  900ms cubic-bezier(.33,.11,.02,.99);
-  
-   		box-shadow: 0 2px  4px  rgba(77, 166, 255, .1) /*rgba(220, 0, 0, .1)*/,
-               0 1px  6px  rgba(77, 166, 255, .05),
-               0 6px  8px rgba(77, 166, 255, .1), 
-               0 12px 16px rgba(77, 166, 255, .1);
-    		transform: scale(1.05)
-                translateY(-0.8rem);
-	} 
-	
-	#curso:hover {
-		transition: box-shadow 900ms cubic-bezier(.33,.11,.02,.99),
-              	transform  900ms cubic-bezier(.33,.11,.02,.99);
-  
-   		box-shadow: 0 2px  4px  rgba(77, 166, 255, .1) /*rgba(232, 104, 48, .1)*/,
-               0 1px  6px  rgba(77, 166, 255, .05),
-               0 6px  8px rgba(77, 166, 255, .1), 
-               0 12px 16px rgba(77, 166, 255, .1);
-    		transform: scale(1.05)
-                translateY(-0.8rem);
-	} 
-	
-	#dropbox:hover {
-		transition: box-shadow 900ms cubic-bezier(.33,.11,.02,.99),
-              	transform  900ms cubic-bezier(.33,.11,.02,.99);
-  
-   		box-shadow: 0 2px  4px  rgba(77, 166, 255, .1),
-               0 1px  6px  rgba(77, 166, 255, .05),
-               0 6px  8px rgba(77, 166, 255, .1), 
-               0 12px 16px rgba(77, 166, 255, .1);
-    		transform: scale(1.05)
-                translateY(-0.8rem);
-	} 
-	
-	#reddit:hover {
-		transition: box-shadow 900ms cubic-bezier(.33,.11,.02,.99),
-              	transform  900ms cubic-bezier(.33,.11,.02,.99);
-  
-   		box-shadow: 0 2px  4px  rgba(77, 166, 255, .1) /*rgba(211, 54, 130, .1)*/,
-               0 1px  6px  rgba(77, 166, 255, .05),
-               0 6px  8px rgba(77, 166, 255, .1), 
-               0 12px 16px rgba(77, 166, 255, .1);
-    		transform: scale(1.05)
-                translateY(-0.8rem);
-	}
-	
-	
-	#mail:hover {
-		transition: box-shadow 900ms cubic-bezier(.33,.11,.02,.99),
-              	transform  900ms cubic-bezier(.33,.11,.02,.99);
-  
-   		box-shadow: 0 2px  4px  rgba(77, 166, 255, .1) /*rgba(255, 204, 0, .1)*/,
-               0 1px  6px  rgba(77, 166, 255, .05),
-               0 6px  8px rgba(77, 166, 255, .1), 
-               0 12px 16px rgba(77, 166, 255, .1);
-    		transform: scale(1.05)
-                translateY(-0.8rem);
-	}
-	
-	#pa:hover {
-		transition: box-shadow 900ms cubic-bezier(.33,.11,.02,.99),
-              	transform  900ms cubic-bezier(.33,.11,.02,.99);
-  
-   		box-shadow: 0 2px  4px  rgba(77, 166, 255, .1) /*rgba(255, 77, 77, .1)*/,
-               0 1px  6px  rgba(77, 166, 255, .05),
-               0 6px  8px rgba(77, 166, 255, .1), 
-               0 12px 16px rgba(77, 166, 255, .1);
-    		transform: scale(1.05)
-                translateY(-0.8rem);
-	}
-	
-	#di:hover {
-		transition: box-shadow 900ms cubic-bezier(.33,.11,.02,.99),
-              	transform  900ms cubic-bezier(.33,.11,.02,.99);
-  
-   		box-shadow: 0 2px  4px  rgba(77, 166, 255, .1) /*rgba(0, 179, 0, .1)*/,
-               0 1px  6px  rgba(77, 166, 255, .05),
-               0 6px  8px rgba(77, 166, 255, .1), 
-               0 12px 16px rgba(77, 166, 255, .1);
-    		transform: scale(1.05)
-                translateY(-0.8rem);
-	}
-	
 	input {
 		font-family: 'Open Sans', sans-serif;
 		text-align: center;
 		color: #dddddd;
-		background-color: #1f2328;
-		border: 2px solid #073642;
+		background-color: rgba(0, 0, 0, 0.5);
+		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.8);
+		border: 0.25px solid #073642;
 		border-radius: 3px;
 		width: 42%;
 		height: 20px;
@@ -353,18 +283,16 @@
 		animation-name: rise;
 		animation-duration: 0.7s;
 		animation-timing-function: linear;
-		animation-iteration: 1;
+
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
 	}
 		
-	input:focus {
-		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
-		border: 2px solid #073642;
-	}
-		
-	input:hover {
-		box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
-		border: 2px solid #073642;
-	}
+
 	
 	#logo {
 		margin-top: 50px;
@@ -374,7 +302,6 @@
 		padding: 50px;	
 		animation-name: rise;
 		animation-duration: 3.5s;
-		animation-iteration: 1;
 		-webkit-touch-callout: none;
 		-webkit-user-select: none;
 		-khtml-user-select: none;
@@ -389,26 +316,13 @@
 	}
 	
 	#icons {
-		position: center;
 		font-family:'Nova Mono', sans-serif;
-		text-align: center;
 		color: #595959;
-		font-size: 12px;
-		padding: 30px;
-		background: #21252b;
-		
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
+		padding: 50px;
 	}
 	
 	#instagram ,#blackboard, #facebook{
-		background-color: #21252b;
-		color: var(--foreground-light);
-		transition: 0.5s ease;
+		color: #1f2328;
 	}
 	
 	#instagram:hover {
