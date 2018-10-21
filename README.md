@@ -1,4 +1,4 @@
-# 31MarcoBarbosa.github.io
+# Barca88.github.io
 Startup page
-https://31marcobarbosa.github.io/Solarized/
+https://Barca88.github.io/Solarized/
 
