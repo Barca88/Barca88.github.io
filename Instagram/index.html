@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Awaiting, the instagram account will open in 5 seconds...</p>
+    <script type="text/javascript">
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      
+      if (/android/i.test(userAgent)) {
+        setTimeout(function() {
+          window.location.href = 'intent://instagram.com/_u/kontrilhas/#Intent;package=com.instagram.android;scheme=https;end';
+        }, 5000);
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        setTimeout(function() {
+          window.location.href = 'instagram://user?username=kontrilhas';
+        }, 5000);
+      } else {
+        setTimeout(function() {
+          window.location.href = 'https://www.instagram.com/kontrilhas/';
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>
